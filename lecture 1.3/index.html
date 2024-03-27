@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <button class="b1">Hide</button>
+    <button class="b2">Show</button>
+    <button class="b3">fade in</button>
+    <button class="b4">fade out</button>
+    <button class="b5">fade toggle</button>
+    <button class="b6">slide up</button>
+    <button class="b7">slide down</button>
+    <button class="b8">slide toggle</button>
+    <button class="b9">add class</button>
+    <button class="b10">remove class</button>
+    <button class="b11">toggle class</button>
+    
+
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+       
+       $(document).ready(function(){
+        $(".b1").click(function(){
+            $(".main").hide();
+        })
+
+        $(".b2").click(function(){
+            $(".main").show();
+        })
+
+        $(".b3").click(function(){
+            $(".main").fadeIn();
+        })
+
+        $(".b4").click(function(){
+            $(".main").fadeOut();
+        })
+
+        $(".b5").click(function(){
+            $(".main").fadeToggle();
+        })
+
+        $(".b6").click(function(){
+            $(".main").slideUp();
+        })
+
+        $(".b7").click(function(){
+            $(".main").slideDown();
+        })
+
+        $(".b8").click(function(){
+            $(".main").slideToggle();
+        })
+
+        $(".b9").click(function(){
+            $(".box").addClass("edit");
+        })
+
+        $(".b10").click(function(){
+            $(".box").removeClass("edit");
+        })
+
+        $(".b11").click(function(){
+            $(".box").toggleClass("edit");
+        })
+
+        
+       }) 
+    
+    
+      </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding-left: var(--padding-left);
+	padding-right: var(--padding-right);
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: -12px;
+	padding-right: -12px;
+}
+
+.d-flex {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.align-center {
+	align-items: center;
+}
+
+.justify-end {
+	justify-content: flex-end;
+    }
+    
+a {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+.justify-center{
+	justify-content: center;
+}
+
+/* Header Start */
+header {
+	padding: 20px 0px;
+	font-family: var(--main-font);
+	font-weight: var(--fw-500);
+}
+
+.logo img {
+	width: 140px;
+}
+
+header .menu ul li {
+	padding-right: 5px;
+	
+
+	font-size: var(--fs-18);
+}
+
+header .menu ul li a {
+	color: var(--secondary-color);
+	text-decoration: none;
+	padding: 25px;
+	transition: var(--transition);
+	text-transform: capitalize;
+}
+
+header .menu ul li:last-child {
+	margin-right: 0;
+}
+
+header .menu ul li a i {
+	font-size: var(--fs-14);
+	transition: var(--transition);
+	margin-left: 4px;
+}
+
+header .menu ul li .drop-down {
+	position: absolute;
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+	padding: 20px 0;
+	top: 130px;
+	opacity: 0;
+	visibility: hidden;
+	transition: var(--transition);
+}
+
+header .menu ul li .drop-down ul li a {
+	color: var(--black-color);
+	font-size: var(--fs-16);
+	padding: 5px 20px;
+}
+
+header .menu ul li .drop-down ul li:first-child {
+	margin-top: 0;
+}
+
+header .menu ul li .drop-down ul li:last-child {
+	margin-bottom: 0;
+}
+
+header .menu ul li:first-child .drop-down ul li:first-child a {
+	color: var(--primary-color);
+}
+
+header .menu ul li .drop-down ul li:hover a {
+	color: var(--primary-color);
+}
+
+header .menu ul li:hover a {
+	color: var(--primary-color);
+}
+
+header .menu ul li:hover a i {
+	transform: rotate(180deg);
+}
+
+header .menu ul li:hover .drop-down {
+	top: 120px;
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Header End */

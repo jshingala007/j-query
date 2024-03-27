@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  
+
+    <section>
+        <div class="container">
+            <div class="row">
+
+                <div class="main-box row">
+                    <div class="box box1"></div>
+                <div class="box box2"></div>
+                <div class="box box3"></div>
+                <div class="box box4"></div>
+            
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+
+        $(".box1").mouseenter(function(){
+    
+           $(this).css("background-color","red")
+    
+        });
+
+        $(".box2").mouseleave(function(){
+    
+        $(this).css("transform","scale(0.5)")
+        $(this).css("transition","0.5s")
+
+    });
+    
+    $(".box3").click(function(){
+    
+    $(this).css("background-color","brown");
+
+});
+
+$(".box4").dblclick(function(){
+    
+    $(this).css("background-color","black");
+
+});
+
+    
+    
+    
+    
+      </script>
+</body>
+</html>
